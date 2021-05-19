@@ -166,4 +166,5 @@ for(i in 2:100){ # to 100 cause it has 100 frames by default
 }
 ```
 
-![](C:/Users/cristina/Desktop/MNCN/articulo/3plotGifAnimatMosses2.gif)
+![](3plotGifAnimatMosses2.gif)
+
