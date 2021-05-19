@@ -1,9 +1,9 @@
-Animated Plot Mosses
+Animated Plots Moss Edition
 ================
 CRonquillo
 18/5/2021
 
-> **Paquetes necesarios**
+> **Packages**
 
 ``` r
 library(stringr)
@@ -19,11 +19,11 @@ library(rnaturalearth)
 library(rnaturalearthdata)
 ```
 
-### Preparación del *environment*
+### *environment*
 
 ``` r
 rm(list=ls(all=T)) # clears workspace
-set.seed(2)
+
 setwd("C:/Users/cristina/Desktop/MNCN/articulo") #set the working directory
 ```
 
@@ -75,7 +75,7 @@ r<-ggplot() +
         Year: {closest_state}") # the title changes with the year
 ```
 
-![](C:/Users/cristina/Desktop/MNCN/articulo/distribution_1970to2000.gif)
+![](distribution_1970to2000.gif)
 
 -----
 
@@ -106,7 +106,7 @@ plot_s<-s+
   shadow_mark(past=TRUE) # to keep previous bars
 ```
 
-![](C:/Users/cristina/Desktop/MNCN/articulo/occurrences_per_year1970-2000.gif)
+![](occurrences_per_year1970-2000.gif)
 
 ### Point-Line plot:
 
@@ -121,7 +121,7 @@ plot_s2 <- qplot(x = year,
   transition_reveal(year)
 ```
 
-![](C:/Users/cristina/Desktop/MNCN/articulo/LineNumberOcc_per_year1970-2000.gif)
+![](LineNumberOcc_per_year1970-2000.gif)
 
 ### *Number of new species accumulated per year*
 
@@ -137,7 +137,7 @@ t<-ggplot(div, mapping=aes(x = year , y = acumulado),stat="identity") +
 plot_t<-t+transition_reveal(year) #animation
 ```
 
-![](C:/Users/cristina/Desktop/MNCN/articulo/richnessAcum70-00.gif)
+![](richnessAcum70-00.gif)
 
 -----
 
